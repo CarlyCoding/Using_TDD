@@ -1,10 +1,7 @@
 
-
 # Error. 1.
 # error message requires get_pet_shop_name to be defined. 
 # def get_pet_shop_name using dictionary key. 
-from this import s
-
 
 def get_pet_shop_name(shop):
     return shop["name"]
@@ -25,8 +22,8 @@ def get_total_cash(shop):
 def add_or_remove_cash(shop, money):
     shop["admin"]["total_cash"] += money
 
-# Error 4
-# Same as prior but with removal so same function but with -= 
+# Entry 4-
+# Initally thought this would be same as prior with -, but func already def so user will calc if -.
 
 
 
