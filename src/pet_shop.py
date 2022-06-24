@@ -13,6 +13,13 @@ def get_pet_shop_name(shop_name):
 def get_total_cash(cash_takings):
     return cash_takings["admin"]["total_cash"]
 
+# Error. 3. 
+# add_or_remove_cash requires definition. 
+# The function prior will return the total cash, 1000, which we need to add 10 to. 
+# 
+
+
+
 
 
 
