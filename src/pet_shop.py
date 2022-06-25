@@ -3,6 +3,9 @@
 # error message requires get_pet_shop_name to be defined. 
 # def get_pet_shop_name using dictionary key. 
 
+from os import remove
+
+
 def get_pet_shop_name(shop):
     return shop["name"]
 
@@ -44,7 +47,7 @@ def increase_pets_sold(shop, pets):
 # The function wants the total of the items in the self.cc_pet_shop list
 # Can solve by counting dictionary entries in list as this is == stock (and 6).
 # Function should return a result. 
-# Use len to give length of list (pets dict key)
+# Use len to give length (number?) of matching pets in dict. 
 
 def get_stock_count(shop):
     return len(shop["pets"])
@@ -71,8 +74,33 @@ def find_pet_by_name(shop, pet_name):
 # This line is writing my for loop, and defining pet (I'm adding notes for revision)
     for pet in shop["pets"]:
         if pet_name == pet["name"]:
+        # Pet can be returned because it will match input, due to loop & key.
             return pet
 
+# Entry 10 
+# This is the same as above, will work now bc of above. 
+
+# Error 11
+# remove_pet_by_name requires definition.
+# The function wants the input of pet name to remove the matching dictionary entry. 
+# Wants a 'value" of none when Arthur is keyed. 
+# Run loop to match input to dictonary, and use .remove to remove from dict. 
+
+def remove_pet_by_name(shop, pet_name):
+    for pet in shop["pets"]:
+        if pet_name == pet["name"]:
+            shop["pets"].remove(pet)
+            
+# Error 12
+# add_pet_to_stock requires definition.
+# The new pet Bors the Younger should be added into the self.cc_pet_shop stock to take stock to 7 count. 
+# Append the dictionary list pets with new_pet. 
+def add_pet_to_stock(shop, new_pet):
+    shop["pets"].append(new_pet)
+
+# Error 13 
+# get_customer_cash requires definition. 
+# Use parameter customers, if equal to 1000 with key "cash" return dict (poss not full dict poss cash)
 
 
 
