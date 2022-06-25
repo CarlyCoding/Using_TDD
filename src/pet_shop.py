@@ -65,7 +65,7 @@ def get_pets_by_breed(shop, breed):
 
 # Entry 9 
 # find_pet_by_name requires definition. 
-# What it wants is if input is equal to dictionary name entry? 
+# What it wants is if input (name) is equal to dictionary name entry? 
 
 
 
