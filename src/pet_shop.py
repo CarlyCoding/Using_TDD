@@ -51,8 +51,8 @@ def get_stock_count(shop):
 
 # Error 8 
 # get_pets_by_breed requires definition. 
-# Use the perameters shop & breed with if ==.
-# Function should return 
+# Use the perameters shop & breed with if == in a loop. 
+# Function should return a result. 
 
 def get_pets_by_breed(shop, breed):
     found_pets = []
@@ -62,6 +62,10 @@ def get_pets_by_breed(shop, breed):
         
 
     return found_pets
+
+# Entry 9 
+# find_pet_by_name requires definition. 
+# What it wants is if input is equal to dictionary name entry? 
 
 
 
