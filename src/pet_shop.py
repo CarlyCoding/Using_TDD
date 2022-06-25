@@ -33,6 +33,12 @@ def get_pets_sold(sales):
     return sales["admin"]["pets_sold"]
 
 # Error 6 
+# increase_pets_sold requires definition
+# Similar to error 3, increase the get_pets_sold. No return is required as no =
+
+def increase_pets_sold(sales, pets):
+    sales["admin"]["pets_sold"] += pets
+
 
 
 
