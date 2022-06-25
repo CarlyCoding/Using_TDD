@@ -63,9 +63,20 @@ def get_pets_by_breed(shop, breed):
 
     return found_pets
 
-# Entry 9 
+# Error 9 
 # find_pet_by_name requires definition. 
-# What it wants is if input (name) is equal to dictionary name entry? 
+# What it wants is if input (name) is equal to dictionary name entry.
+
+def find_pet_by_name(shop, pet_name):
+# This line is writing my for loop, and defining pet (I'm adding notes for revision)
+    for pet in shop["pets"]:
+        if pet_name == pet["name"]:
+            return pet
+
+
+
+
+
 
 
 
