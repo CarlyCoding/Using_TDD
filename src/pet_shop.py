@@ -29,15 +29,34 @@ def add_or_remove_cash(shop, money):
 # get_pets_sold requires definition. 
 # Use the two dictionary keys admin and pets_sold.
 
-def get_pets_sold(sales):
-    return sales["admin"]["pets_sold"]
+def get_pets_sold(shop):
+    return shop["admin"]["pets_sold"]
 
 # Error 6 
 # increase_pets_sold requires definition
 # Similar to error 3, increase the get_pets_sold. No return is required as no =
 
-def increase_pets_sold(sales, pets):
-    sales["admin"]["pets_sold"] += pets
+def increase_pets_sold(shop, pets):
+    shop["admin"]["pets_sold"] += pets
+
+# Error 7 
+# get_stock_count requires definition. 
+# The function wants the total of the items in the self.cc_pet_shop list
+# Can solve by counting dictionary entries in list as this is == stock (and 6).
+# Function should return a result. 
+# Use len to give length of list (pets dict key)
+
+def get_stock_count(shop):
+    return len(shop["pets"])
+
+
+
+
+
+
+
+
+
 
 
 
