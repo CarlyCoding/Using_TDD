@@ -49,6 +49,23 @@ def increase_pets_sold(shop, pets):
 def get_stock_count(shop):
     return len(shop["pets"])
 
+# Error 8 
+# get_pets_by_breed requires definition. 
+# Use the perameters shop & breed with if ==.
+# Function should return 
+
+def get_pets_by_breed(shop, breed):
+    found_pets = []
+    for pet in shop["pets"]:
+        if breed == pet["breed"]:
+            found_pets.append(pet)
+        
+
+    return found_pets
+
+
+
+
 
 
 
