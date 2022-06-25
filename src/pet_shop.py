@@ -25,6 +25,15 @@ def add_or_remove_cash(shop, money):
 # Entry 4-
 # Initally thought this would be same as prior with -, but func already def so user will calc if -.
 
+# Error 5 
+# get_pets_sold requires definition. 
+# Use the two dictionary keys admin and pets_sold.
+
+def get_pets_sold(sales):
+    return sales["admin"]["pets_sold"]
+
+# Error 6 
+
 
 
 
