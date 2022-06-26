@@ -100,7 +100,11 @@ def add_pet_to_stock(shop, new_pet):
 
 # Error 13 
 # get_customer_cash requires definition. 
-# Access position 0 is customer list and key cash by using an if function with if 1000. 
+# Position 0 already defined in test, use dict key for cash & a return. 
+def get_customer_cash(customer):
+    return customer["cash"]
+
+    
 
 
 
