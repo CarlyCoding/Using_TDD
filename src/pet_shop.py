@@ -111,6 +111,13 @@ def get_customer_cash(customer):
 def remove_customer_cash(customer, money):
     customer["cash"] -= money
 
+# Error 15
+# get_customer_pet_count requires definition. 
+# Use len to count the pets each cust has. Test has def'd [0] for cust parameter. 
+
+def get_customer_pet_count(customer):
+    return len(customer["pets"])
+
 
 
 
