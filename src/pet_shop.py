@@ -104,8 +104,12 @@ def add_pet_to_stock(shop, new_pet):
 def get_customer_cash(customer):
     return customer["cash"]
 
-    
+# Error 14
+# remove_customer_cash requires defining. 
+# Reduce cash for customer[0] by 100. Cust defined with 0 so dict key -= money.
 
+def remove_customer_cash(customer, money):
+    customer["cash"] -= money
 
 
 
